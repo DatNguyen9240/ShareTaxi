@@ -1,0 +1,130 @@
+/* confirm.css */
+
+.confirm-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px; /* Increased padding */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    margin-top: 100px;
+    max-width: 1400px; /* Increased maximum width */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    width: 90%; /* Make the container responsive */
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    margin: 0 20px; /* Increased space between sections */
+    padding: 20px; /* Padding for inner content */
+}
+
+.left-section h2 {
+    font-size: 28px; /* Increased title size */
+    color: #2c3e50;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif; 
+    letter-spacing: 0.5px; 
+    line-height: 1.6; /* Increased line height */
+}
+
+.trip-info {
+    margin: 15px 0;
+}
+
+.trip-info p {
+    font-size: 20px; /* Increased font size for trip info */
+    color: #34495e;
+    font-family: 'Arial', sans-serif; 
+    letter-spacing: 0.5px; 
+    line-height: 1.6; /* Increased line height */
+}
+
+.services {
+    margin-top: 25px; /* Increased margin for services */
+}
+
+.services p {
+    font-weight: bold;
+    font-size: 22px; /* Increased font size for service title */
+    color: #333;
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0; /* Increased spacing between services */
+    font-size: 18px; /* Increased font size for services */
+    color: #666;
+    transition: transform 0.2s;
+}
+
+.services li svg {
+    margin-right: 10px;
+    color: #007bff; 
+}
+
+.services li:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.right-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px; /* Increased padding for confirmation section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-section h3 {
+    font-size: 24px; /* Increased title size for confirmation */
+    color: #333;
+}
+
+.summary {
+    margin-top: 25px; /* Increased margin for summary */
+}
+
+.summary p {
+    font-size: 20px; /* Increased font size for summary */
+    color: #555;
+    font-family: 'Arial', sans-serif; 
+    letter-spacing: 0.5px; 
+    line-height: 1.6; 
+}
+
+.confirm-btn {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px; /* Increased button size */
+    font-size: 18px; /* Increased button font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-btn:hover {
+    background-color: #1f6391; 
+    transform: scale(1.05); /* Scale button on hover */
+}
+
+@media (max-width: 768px) {
+    .confirm-container {
+        flex-direction: column;
+        padding: 20px; /* Adjust padding for smaller devices */
+    }
+
+    .left-section,
+    .right-section {
+        margin: 10px 0; /* Adjust spacing for smaller devices */
+    }
+}

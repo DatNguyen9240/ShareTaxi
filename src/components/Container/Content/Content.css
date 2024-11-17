@@ -1,0 +1,19 @@
+/* Style for the home image */
+.homeImage {
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    overflow: hidden;
+}
+
+
+.homeImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Style for the search bar */
+
+
+

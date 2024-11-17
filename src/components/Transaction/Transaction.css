@@ -1,0 +1,104 @@
+.transaction-container {
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.transaction-title {
+  margin-bottom: 24px;
+  color: #1f1f1f;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.transaction-table {
+  width: 100%;
+}
+
+/* Table header styling */
+.transaction-table .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  text-align: center !important;
+  color: #262626;
+  padding: 16px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Table cell styling */
+.transaction-table .ant-table-tbody > tr > td {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: center !important;
+}
+
+/* Specific column widths */
+.transaction-table .ant-table-column-id {
+  width: 80px;
+}
+
+.transaction-table .ant-table-column-amount {
+  width: 120px;
+}
+
+.transaction-table .ant-table-column-transactionType {
+  width: 150px;
+}
+
+.transaction-table .ant-table-column-status {
+  width: 120px;
+}
+
+.transaction-table .ant-table-column-createdAt {
+  width: 180px;
+}
+
+.transaction-table .ant-table-column-referenceId {
+  width: 200px;
+}
+
+/* Stripe effect for better readability */
+.transaction-table .ant-table-tbody > tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Row hover effect */
+.transaction-table .ant-table-tbody > tr:hover > td {
+  background: #f0f7ff !important;
+}
+
+/* Pagination styling */
+.transaction-table .ant-pagination {
+  margin-top: 16px;
+  text-align: right;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .transaction-container {
+    padding: 16px;
+    margin: 100px 10px 20px;
+  }
+  
+  .transaction-table {
+    overflow-x: auto;
+  }
+  
+  .transaction-title {
+    font-size: 20px;
+  }
+}  
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+   

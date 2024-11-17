@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.date-input {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #CCCCCC;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+.date-input:focus {
+  border-color: mediumpurple;
+}
+
+/* datepicker styles */
+
+.datepicker-container {
+  position: relative;
+}
+
+.datepicker {
+  position: absolute;
+  top: 100%;
+  z-index: 100;
+  margin-top: 4px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  width: max-content;
+}
+
+.datepicker button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: background 0.3s ease, color 0.3s ease;
+  touch-action: manipulation;
+}
+
+.days,
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 40px); /* Tăng kích thước cho dễ nhấn */
+  gap: 8px;
+  margin-block: 10px;
+}
+
+.days span {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: slategray;
+}
+
+.dates button {
+  color: slategray;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.dates button:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  user-select: none;
+}
+
+.dates button:hover:not(.disabled) {
+  background: rgba(147, 112, 216, 0.15);
+}
+
+.dates button.today {
+  background: rgba(147, 112, 216, 0.3);
+  color: mediumpurple;
+}
+
+.dates button.selected {
+  background: mediumpurple;
+  color: #fff;
+}
+
+/* Header styles */
+
+.datepicker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.datepicker-header select,
+.datepicker-header input {
+  font-size: 14px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.datepicker-header input {
+  max-width: 70px;
+  text-align: center;
+}
+
+.datepicker-header button {
+  color: slategray;
+  padding: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.datepicker-header button:hover {
+  color: mediumpurple;
+}
+
+/* Footer styles */
+
+.datepicker-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.datepicker-footer button {
+  background: rgba(119, 136, 153, 0.1);
+  padding: 5px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.datepicker-footer button.apply {
+  background: mediumpurple;
+  color: #fff;
+}
+
+.datepicker-footer button.apply:hover {
+  background: darkviolet;
+}

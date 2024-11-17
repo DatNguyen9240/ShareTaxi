@@ -1,0 +1,83 @@
+.containerSearch {
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.table-responsive {
+  margin-top: 120px;
+}
+
+.trip-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 7px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.trip-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #333;
+}
+
+.trip-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.search-history, .trips-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.search-history h2 {
+  font-size: 1.5rem;
+}
+
+.search-history .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.search-history .btn:hover {
+  background-color: #0056b3;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.search-history .loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  width: 100%;
+}

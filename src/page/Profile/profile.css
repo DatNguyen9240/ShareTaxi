@@ -1,0 +1,112 @@
+.profile {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+}
+
+.profile h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #0d47a1; /* Màu xanh đậm */
+    margin-bottom: 25px;
+}
+
+.profile label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: #37474f; /* Màu xám đậm */
+}
+
+.profile input[type="text"],
+.profile input[type="email"],
+.profile input[type="password"],
+.profile input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #b0bec5; /* Màu xám nhạt */
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #263238; /* Màu xanh đậm */
+    background-color: #e3f2fd; /* Màu xanh nhạt */
+    transition: all 0.3s ease;
+}
+
+.profile input[type="text"]:focus,
+.profile input[type="email"]:focus,
+.profile input[type="password"]:focus,
+.profile input[type="number"]:focus {
+    border-color: #1e88e5; /* Màu xanh dương nhấn */
+    outline: none;
+    background-color: #ffffff; /* Màu trắng */
+}
+
+.profile #button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.profile #button:first-of-type {
+    background-color: #1e88e5; /* Màu xanh dương nhấn */
+    color: white;
+}
+
+.profile #button:last-of-type {
+    background-color: #64b5f6; /* Màu xanh nhạt */
+    color: white;
+}
+
+.profile #button:hover {
+    background-color: #1565c0; /* Màu xanh dương đậm hơn khi hover */
+    transform: scale(1.02);
+}
+
+.profile .error {
+    color: #d32f2f; /* Màu đỏ lỗi */
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.profile .success {
+    color: #388e3c; /* Màu xanh lá thành công */
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.profile p {
+    font-size: 17px;
+    color: #263238; /* Màu xanh đậm */
+    margin: 12px 0;
+}
+
+.profile p strong {
+    color: #37474f; /* Màu xám đậm */
+}
+
+/* Đặt kích thước cho DatePicker */
+.react-datepicker {
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}

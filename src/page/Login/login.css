@@ -1,0 +1,325 @@
+/* Remove or comment out the body styles at the top of the file */
+/* body {
+  ...
+} */
+
+
+/* Add a new class for the login page background */
+.login-page {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('C:\Users\Viet Hau\Desktop\codetronggitt\SWP391-Group-6-Sharing-taxi-FE\src\assets\Images\background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+
+ 
+  /* Container form login */
+/* Thay đổi chiều rộng của form */
+.login-form {
+  margin-left: 0px;
+  margin-top: 0px;
+  background: transparent;
+  width: 600px; /* Tăng chiều rộng của form */
+  padding: 50px;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid #00AFF5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+
+
+
+
+
+  /* Tiêu đề form */
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: black;
+  }
+ 
+  /* Các trường input trong form */
+  .login-form .input-container-email {
+    display: flex;
+    align-items: center; /* Vertically centers the elements */
+    gap: 20px; /* Adds space between the input and icon */
+  }
+
+
+  .login-form .input-container-email input{
+    flex:1;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px none black;
+    background-color: #e2e2e2;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .login-form .input-container-email input:focus{
+    border: 3px solid #00AFF5 ;
+  }
+  .login-form .input-container-email label {
+    color: black;
+    margin-left: 0px;
+    margin-right: -10px; /* Adds some space between label and input */
+  }
+  .login-form .input-container-password {
+    display: flex;
+    align-items: center; /* Vertically centers the elements */
+    gap: 20px; /* Adds space between the input and icon */
+  }
+
+
+  .login-form .input-container-password input{
+    flex:1;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px none black;
+    background-color: #e2e2e2;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .login-form .input-container-password input:focus{
+    border: 3px solid #00AFF5 ;
+  }
+  .login-form .input-container-password label {
+    color: black;
+    margin-right: -10px; /* Adds some space between label and input */
+  }
+ 
+  /* Nút Login */
+  .login-form button[type="submit"] {
+    width: 325px;
+    padding: 12px;
+    background-color: #00AFF5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 40px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 90px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+ 
+  /* Hiệu ứng hover cho nút Login */
+  .login-form button[type="submit"]:hover {
+    background-color: #0090c9;
+  }
+ 
+  .login-form .remember-button input{
+    background-color: #007bff;
+    color: white;
+  }
+  .login-form .remember-button{
+    cursor: pointer;
+    color: black;
+    display: inline-block; /* Display elements inline */
+  margin-right: 10px; /* Add space between them */
+  }
+  .login-form .forgotpw-button{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    display: inline-block; /* Display elements inline */
+    margin-left: 195px; /* Add pace between them */
+    font-weight: bold;
+    color: #007bff;
+  }
+  .login-form .forgotpw-button:hover {
+    text-decoration: underline;
+  }
+  /* Kiểu lỗi */
+  .login-form .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+ 
+  /* Kiểu nhãn (label) */
+  .login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+ 
+  /* Link quên mật khẩu */
+  .login-form .forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+ 
+  .login-form .forgot-password:hover {
+    text-decoration: underline;
+  }
+  #remember-me {
+    margin-right: 8px; /* Khoảng cách giữa checkbox và label */
+  }
+ 
+  label[for="remember-me"] {
+    display: inline-block;
+    vertical-align: middle; /* Đảm bảo label và checkbox căn giữa theo chiều dọc */
+  }
+ 
+  input[type="checkbox"] {
+    width: 16px; /* Kích thước của checkbox */
+    height: 16px; /* Kích thước của checkbox */
+  }
+ 
+  input[type="checkbox"]:focus {
+    outline: none; /* Xóa viền mặc định của checkbox khi focus */
+    box-shadow: 0 0 3px 3px rgba(0, 123, 255, 0.5); /* Hiệu ứng ánh sáng khi checkbox được focus */
+  }
+  .or-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0; /* Khoảng cách trên và dưới */
+  }
+ 
+  .or-divider::before,
+  .or-divider::after {
+    content: "";
+    flex: 1; /* Tạo chiều dài bằng nhau */
+    height: 1px; /* Độ dày của thanh */
+    background: #ccc; /* Màu sắc của thanh */
+    margin: 0 5px; /* Khoảng cách giữa thanh và chữ OR */
+  }
+ 
+  .or-divider span {
+    white-space: nowrap; /* Ngăn chữ OR bị ngắt dòng */
+    color: black; /* Màu chữ */
+    font-weight: bold; /* Đậm chữ */
+  }
+
+
+  .login-form .forgot-page h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: black;
+  }
+  .login-form .forgot-page input {
+    color: black;
+    flex: 1;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none; /* Remove all borders */
+    background-color: #e2e2e2; /* Make background transparent to hide white background */
+    border-radius: 16px; /* Remove rounded corners */
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s; /* Add transition for hover/focus effect */
+  }
+  .login-form .forgot-page input:focus{
+    border: 3px solid #00AFF5;
+  }
+  .login-form .forgot-page label {
+    color: black;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: -10px; /* Adds some space between label and input */
+  }
+  .login-form .forgot-page .back-button{
+    margin-top: 10px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+  }
+  .login-form .forgot-page .back-button:hover{
+    color: #007bff;
+    text-decoration: underline;
+  }
+  .login-form .forgot-page input::placeholder {
+    color: black; /* Change this to any color code you want */
+    opacity: 1;  /* Ensure the opacity is set to 1 for full visibility */
+  }
+ 
+  .signup-link {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 5px; /* Khoảng cách giữa các phần tử */
+    margin-left: 145px;
+  }
+
+
+  .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+   
+  }
+
+
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+
+
+/* Thêm border cho form đăng nhập */
+.login-form {
+    border: 2px solid #00AFF5; /* Thêm border màu xanh */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng cho form */
+    transition: transform 0.3s; /* Thêm hiệu ứng chuyển động */
+}
+
+
+
+
+
+
+/* Thay đổi border cho các trường input */
+.login-form .input-container-email input,
+.login-form .input-container-password input {
+    border: 1px solid #ccc; /* Thay đổi border thành màu xám */
+}
+
+
+/* Thay đổi border khi focus cho các trường input */
+.login-form .input-container-email input:focus,
+.login-form .input-container-password input:focus {
+    border: 2px solid #00AFF5; /* Thay đổi border khi focus thành màu xanh */
+}
+.footer img{
+  max-width: 5%;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+

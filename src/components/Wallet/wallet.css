@@ -1,0 +1,121 @@
+/* wallet.css */
+
+.wallet-container {
+    overflow: hidden; /* Ngăn kéo xuống */
+    max-width: 500px; /* Giới hạn chiều rộng của container lớn hơn */
+    margin: 250px auto; /* Căn giữa container */
+    padding: 30px; /* Thêm padding nhiều hơn */
+    border: 1px solid #ccc; /* Thêm viền */
+    border-radius: 10px; /* Bo góc hơn */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Thêm bóng đổ */
+    background-color: #f9f9f9; /* Màu nền sáng */
+}
+
+.wallet-title {
+    font-size: 28px; /* Kích thước chữ lớn hơn cho tiêu đề */
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-bottom: 25px; /* Khoảng cách dưới tiêu đề */
+    color: #333; /* Màu chữ đậm */
+}
+
+.wallet-balance {
+    font-size: 20px; /* Kích thước chữ lớn hơn cho số dư */
+    margin-bottom: 20px; /* Khoảng cách dưới số dư */
+    text-align: center; /* Căn giữa văn bản số dư */
+    color: #555; /* Màu xám đậm */
+}
+
+.wallet-balance-amount {
+    font-weight: bold; /* Chữ đậm cho số tiền */
+    color: #007bff; /* Màu xanh cho số tiền */
+}
+
+.wallet-amount-display {
+    font-weight: bold; /* Làm cho số tiền đậm */
+    color: #007bff; /* Màu xanh cho tính rõ ràng */
+    display: block; /* Đảm bảo nó chiếm không gian block */
+    margin-bottom: 15px; /* Khoảng cách dưới số tiền hiển thị */
+    font-size: 18px; /* Kích thước chữ cho số tiền hiển thị */
+}
+
+/* New styles for the input field */
+.wallet-amount-input {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+    padding: 10px; /* Thêm padding bên trong input */
+    font-size: 18px; /* Kích thước chữ cho văn bản trong input */
+    border: 1px solid #ccc; /* Viền cho input */
+    border-radius: 5px; /* Bo góc cho input */
+    margin-bottom: 15px; /* Khoảng cách dưới input */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ cho input */
+}
+
+.wallet-button-group {
+    display: flex; /* Căn chỉnh các nút cạnh nhau */
+    justify-content: space-between; /* Khoảng cách giữa các nút */
+    margin-bottom: 20px; /* Khoảng cách dưới nhóm nút */
+}
+
+.wallet-increment-button,
+.wallet-decrement-button,
+.wallet-pay-button {
+    flex: 1; /* Tăng chiều rộng của nút để chiếm không gian */
+    padding: 15px; /* Padding bên trong nút nhiều hơn */
+    border: none; /* Bỏ viền mặc định */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ dạng tay khi hover */
+    font-size: 18px; /* Kích thước chữ cho văn bản nút */
+    transition: background-color 0.3s; /* Chuyển tiếp mượt mà cho màu nền */
+    margin: 0 5px; /* Khoảng cách giữa các nút */
+}
+
+.wallet-pay-button {
+    margin-left: 120px;
+}
+
+.wallet-increment-button {
+    background-color: #28a745; /* Màu xanh cho nút tăng */
+    color: white; /* Màu chữ trắng */
+}
+
+.wallet-increment-button:hover {
+    background-color: #218838; /* Màu xanh đậm hơn khi hover */
+}
+
+.wallet-decrement-button {
+    background-color: #dc3545; /* Màu đỏ cho nút giảm */
+    color: white; /* Màu chữ trắng */
+}
+
+.wallet-decrement-button:hover {
+    background-color: #c82333; /* Màu đỏ đậm hơn khi hover */
+}
+
+.wallet-pay-button {
+    background-color: #007bff; /* Màu xanh cho nút thanh toán */
+    color: white; /* Màu chữ trắng */
+    margin-top: 10px; /* Khoảng cách trên nút thanh toán */
+}
+
+.wallet-pay-button:disabled {
+    background-color: #6c757d; /* Màu xám khi vô hiệu hóa */
+    cursor: not-allowed; /* Con trỏ không cho phép */
+}
+
+.wallet-success-message {
+    color: #28a745; /* Màu xanh cho thông báo thành công */
+    text-align: center; /* Căn giữa thông báo thành công */
+    font-size: 16px; /* Kích thước chữ cho thông báo thành công */
+}
+
+.wallet-error-message {
+    color: #dc3545; /* Màu đỏ cho thông báo lỗi */
+    text-align: center; /* Căn giữa thông báo lỗi */
+    font-size: 16px; /* Kích thước chữ cho thông báo lỗi */
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

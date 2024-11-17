@@ -1,0 +1,91 @@
+.containerFooter {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    display: flex;
+    flex-direction: column;
+   
+    position: absolute;
+    margin-top: 915px;
+    left: 0;
+    width: 100%;
+}
+.footer {
+   
+    background-color: #c5c5c5;
+   
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #7f8c8d;
+   
+}
+.footer a {
+    color: #7f8c8d;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.logo {
+    font-weight: bold;
+    color: #00aaff;
+    margin-right: 50px;
+}
+.footer p{
+    color: black;
+    margin-top: 5px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.fb-box {
+    margin-left: -1000px;
+}
+.facebook-btn {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Hình tròn */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+
+.facebook-btn:hover {
+    background-color: #365899; /* Màu đậm hơn khi hover */
+}
+.ins-box{
+    margin-left: -1050px;
+}
+.instagram-btn {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+    border: none;
+    border-radius: 50%; /* Hình tròn */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+
+.instagram-btn:hover {
+    transform: scale(1.1); /* Phóng to khi hover */
+}
+

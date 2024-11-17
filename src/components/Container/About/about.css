@@ -1,0 +1,52 @@
+.about {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    position: absolute;
+    margin-top: 600px;
+    left: 0;
+    width: 100vw;
+    padding-top: 20px;
+    
+}
+.containerabout {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw; /* Thay đổi từ 100% thành 100vw */
+    box-sizing: border-box; /* Thêm thuộc tính này */
+    margin-left: -40px; /* Thêm thuộc tính này */
+    padding: 10px 40px; /* Thêm thuộc tính này */
+    margin-right: -40px;
+    padding-bottom: 10px;
+    background-color: #EDEDED;
+}
+.column {
+    flex: 1;
+    margin: 0 20px;
+}
+.column h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.column p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+.language-button {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}

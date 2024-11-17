@@ -1,0 +1,108 @@
+.my-trips-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+.my-trips-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.trip-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.trip-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s;
+}
+
+.trip-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f1f1f1;
+}
+
+.trip-details {
+    flex: 1;
+    color: #555;
+}
+
+.trip-details p {
+    margin: 4px 0;
+    font-size: 1rem;
+}
+
+.cancel-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e63946;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancel-btn:hover {
+    background-color: #d62828;
+}
+
+.cancel-btn:focus {
+    outline: none;
+}
+
+.view-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Giữa các nút */
+}
+
+.view-btn:hover {
+    background-color: #0056b3;
+}
+
+.trip-buttons {
+    display: flex; /* Để sắp xếp các nút theo hàng ngang */
+    align-items: center;
+}
+
+.no-trips {
+    text-align: center;
+    color: #888;
+    font-size: 1.1rem;
+}
+.disabled {
+    background-color: #ccc; /* Màu nền cho nút bị vô hiệu hóa */
+    cursor: not-allowed; /* Con trỏ khi di chuột qua nút */
+    opacity: 0.6; /* Độ mờ cho nút */
+}
+
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}

@@ -1,0 +1,101 @@
+/* RideShare.css */
+
+.trips-container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+}
+
+.trips-container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trips-table th, 
+.trips-table td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    font-size: 1em;
+    color: #555;
+}
+
+.trips-table th {
+    background-color: #5C8DF6;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.trips-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.trips-table tr:hover {
+    background-color: #e0f7fa;
+    cursor: pointer;
+}
+
+.join-button, 
+.view-details-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.join-button {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 5px;
+}
+
+.join-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.view-details-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.join-button:hover:not(:disabled),
+.view-details-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: #d32f2f;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #ffebee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
